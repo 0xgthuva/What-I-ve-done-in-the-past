@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thuvaragan Gobalakrishnan | Portfolio</title>
+<meta name="description" content="6+ Years in Digital Marketing. Accidental Strategist | Generalist | building + advocating for @team.W2S | Hustler + Hacker + Hipster">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SEO META TAGS — Uncomment and edit values below before launch
+     ═══════════════════════════════════════════════════════════════
+
+     Open Graph (Facebook, LinkedIn, WhatsApp previews)
+<meta property="og:title"       content="Thuvaragan Gobalakrishnan | Digital Marketing Manager">
+<meta property="og:description" content="6+ Years in Digital Marketing. Growth, SEO, Analytics, AI.">
+<meta property="og:image"       content="https://REPLACE_WITH_YOUR_DOMAIN/images/og-cover.jpg">
+<meta property="og:url"         content="https://REPLACE_WITH_YOUR_DOMAIN/">
+<meta property="og:type"        content="profile">
+<meta property="og:locale"      content="en_US">
+
+     Twitter / X Card
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:site"        content="@0xgthuvaDEV">
+<meta name="twitter:creator"     content="@0xgthuvaDEV">
+<meta name="twitter:title"       content="Thuvaragan Gobalakrishnan | Digital Marketing Manager">
+<meta name="twitter:description" content="6+ Years in Digital Marketing. Growth, SEO, Analytics, AI.">
+<meta name="twitter:image"       content="https://REPLACE_WITH_YOUR_DOMAIN/images/og-cover.jpg">
+
+     Schema.org Structured Data (Person)
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Thuvaragan Gobalakrishnan",
+  "jobTitle": "Manager, Digital Marketing",
+  "worksFor": { "@type": "Organization", "name": "Pulse Hotels & Resorts" },
+  "alumniOf": { "@type": "EducationalOrganization", "name": "University of the West of England" },
+  "email": "gthuva@yahoo.com",
+  "url": "https://REPLACE_WITH_YOUR_DOMAIN/",
+  "sameAs": [
+    "https://github.com/0xgthuva",
+    "https://www.linkedin.com/in/REPLACE_WITH_LINKEDIN_HANDLE",
+    "https://twitter.com/0xgthuvaDEV"
+  ],
+  "address": { "@type": "PostalAddress", "addressLocality": "Malé", "addressCountry": "MV" },
+  "knowsAbout": ["Digital Marketing","SEO","Growth Marketing","Analytics","AI","Blockchain"]
+}
+</script>
+
+     Canonical URL
+<link rel="canonical" href="https://REPLACE_WITH_YOUR_DOMAIN/">
+
+     Additional SEO
+<meta name="robots"   content="index, follow">
+<meta name="author"   content="Thuvaragan Gobalakrishnan">
+<meta name="keywords" content="digital marketing, SEO, growth marketing, analytics, Thuvaragan Gobalakrishnan, Maldives">
+
+═══════════════════════════════════════════════════════════════ -->
+
+<link rel="icon" href="images/af3d2098a9c8ee0ca9ad77decd08b8a2.jpg">
+
+<style>
+/* ═══════════════════════════════════════════════════
+   FONTS
+   ═══════════════════════════════════════════════════ */
+@font-face{font-family:GeistSans;src:url(fonts/028c0d39d2e8f589-s.p.woff2) format("woff2");font-display:swap;font-weight:100 900}
+@font-face{font-family:GeistMono;src:url(fonts/5b01f339abf2f1a5.p.woff2) format("woff2");font-display:swap;font-weight:100 900}
+@font-face{font-family:ClashDisplay;src:url(fonts/ClashDisplay-Semibold.woff2) format("woff2");font-weight:600;font-display:swap}
+
+/* ═══════════════════════════════════════════════════
+   DESIGN TOKENS
+   ═══════════════════════════════════════════════════ */
+:root{
+  --sidebar-w: 340px;
+  --card-w: 380px;
+  --gap: 10px;
+  --radius: 20px;
+  --pad: 20px;
+  --main-pad: 48px 36px 48px 36px;
+  --sidebar-pad: 56px 28px 60px 28px;
+
+  --color-bg:   #FBFBFA;
+  --color-card: #ffffff;
+  --color-text: #171717;
+  --color-muted:#555555;
+  --color-dim:  #888888;
+  --color-border:rgba(0,0,0,.08);
+  --color-accent:#1487FA;
+
+  --shadow-card: 0 1px 3px rgba(0,0,0,.09), 0 1px 2px rgba(0,0,0,.06);
+  --shadow-hover: 0 4px 16px rgba(0,0,0,.11), 0 1px 4px rgba(0,0,0,.06);
+
+  --font: GeistSans,-apple-system,BlinkMacSystemFont,sans-serif;
+  --font-mono: GeistMono,'Courier New',monospace;
+}
+
+/* ═══════════════════════════════════════════════════
+   RESET & BASE
+   ═══════════════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font);
+  background-color:var(--color-bg);
+  background-image:url(images/bg.png);
+  background-size:100% 900px;
+  background-position:top;
+  background-repeat:no-repeat;
+  color:var(--color-text);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+/* ═══════════════════════════════════════════════════
+   LAYOUT SHELL
+   ═══════════════════════════════════════════════════ */
+.page-wrap{
+  display:flex;
+  flex-direction:row;
+  align-items:flex-start;
+  min-height:100vh;
+}
+
+/* ═══════════════════════════════════════════════════
+   SIDEBAR
+   ═══════════════════════════════════════════════════ */
+.sidebar{
+  width:var(--sidebar-w);
+  flex-shrink:0;
+  padding:var(--sidebar-pad);
+  position:sticky;
+  top:0;
+  height:100vh;
+  overflow-y:auto;
+  overflow-x:hidden;
+  scrollbar-width:none;
+}
+.sidebar::-webkit-scrollbar{display:none}
+
+.avatar-wrap{width:160px;height:160px;margin-bottom:16px}
+.avatar-wrap img{width:100%;height:100%;border-radius:50%;object-fit:cover}
+
+.profile-name{
+  font-size:clamp(20px,2.2vw,26px);
+  font-weight:700;
+  letter-spacing:-0.5px;
+  line-height:1.2;
+  margin-bottom:4px;
+}
+
+.profile-meta{list-style:none;margin:8px 0}
+.profile-meta li{
+  display:flex;align-items:flex-start;gap:7px;
+  font-size:13px;color:#444;
+  padding:3px 0;line-height:1.45;
+}
+.profile-meta li svg{flex-shrink:0;margin-top:2px;opacity:.65}
+
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0}
+.tag{
+  height:30px;padding:0 11px;border-radius:9px;
+  font-size:12.5px;font-weight:500;
+  display:inline-flex;align-items:center;
+  white-space:nowrap;cursor:default;
+}
+.tag-yellow{background:#FDE277;color:#171717}
+.tag-red   {background:#FED7D7;color:#171717}
+.tag-green {background:#D6F995;color:#171717}
+.tag-blue  {background:#C6E2FF;color:#171717}
+.tag-purple{background:#E2C6FF;color:#171717}
+
+.bio{font-size:13px;color:#444;line-height:1.6;margin:12px 0}
+.built-by{font-size:12px;color:#aaa;margin-top:18px}
+.built-by a{color:#aaa}
+.built-by a:hover{color:#666}
+
+/* ═══════════════════════════════════════════════════
+   MAIN CONTENT
+   ═══════════════════════════════════════════════════ */
+.main{
+  flex:1;
+  min-width:0;
+  padding:var(--main-pad);
+}
+
+/* ═══════════════════════════════════════════════════
+   CARD GRID
+   ═══════════════════════════════════════════════════ */
+.card-grid{
+  display:flex;
+  flex-direction:column;
+  gap:var(--gap);
+  max-width:790px;
+  width:100%;
+}
+.card-row{
+  display:flex;
+  gap:var(--gap);
+  flex-wrap:wrap;
+}
+
+/* ═══════════════════════════════════════════════════
+   CARD BASE
+   ═══════════════════════════════════════════════════ */
+.card{
+  flex:1 1 var(--card-w);
+  min-width:0;
+  background:var(--color-card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow-card);
+  overflow:hidden;
+  position:relative;
+  transition:box-shadow .2s,transform .15s;
+}
+.card:hover{
+  box-shadow:var(--shadow-hover);
+  transform:translateY(-1px);
+}
+.card-full{
+  flex:1 1 100%;
+  width:100%;
+}
+
+.card-pad{padding:var(--pad)}
+
+/* ═══════════════════════════════════════════════════
+   CARD CONTENT PARTS
+   ═══════════════════════════════════════════════════ */
+.card-img{width:100%;height:190px;object-fit:cover;display:block}
+
+.label-pill{
+  display:inline-flex;align-items:center;gap:5px;
+  background:var(--color-accent);color:#fff;
+  font-size:11.5px;font-weight:500;
+  padding:4px 10px;border-radius:8px;
+  margin-bottom:10px;
+}
+.label-pill.hobbies{background:#6EE7B7;color:#065f46}
+
+.card-title{font-size:15px;font-weight:600;margin-bottom:5px;color:var(--color-text)}
+.card-desc{font-size:13px;color:var(--color-muted);line-height:1.5;margin-bottom:10px}
+
+.code-tag{
+  display:inline-block;background:#f0f0f0;color:#444;
+  font-size:12px;padding:2px 7px;border-radius:4px;
+  margin-right:4px;margin-bottom:4px;
+}
+.link-btn{
+  display:inline-flex;align-items:center;gap:5px;
+  background:#f3f4f6;border:0.5px solid #dfdfdf;
+  border-radius:8px;padding:5px 10px;
+  font-size:12px;color:#333;
+  margin-top:6px;transition:background .15s;
+}
+.link-btn:hover{background:#e9eaec}
+
+/* ═══════════════════════════════════════════════════
+   CARD: HOBBY (full-width, image+text side-by-side)
+   ═══════════════════════════════════════════════════ */
+.hobby-card{display:flex;align-items:stretch}
+.hobby-img{
+  width:min(220px,35%);
+  height:auto;
+  min-height:180px;
+  object-fit:cover;
+  flex-shrink:0;
+}
+
+/* ═══════════════════════════════════════════════════
+   CARD: LINKEDIN CAREER CHART
+   ═══════════════════════════════════════════════════ */
+.linkedin-card-inner{
+  padding:var(--pad);
+  display:flex;flex-direction:column;
+  height:360px;
+}
+.linkedin-header{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.linkedin-logo{
+  width:38px;height:38px;background:#0A66C2;border-radius:10px;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.chart-area{flex:1;position:relative;min-height:0;overflow:hidden}
+.chart-area canvas{width:100%!important;height:100%!important;display:block}
+
+/* ═══════════════════════════════════════════════════
+   CARD: NETWORK
+   ═══════════════════════════════════════════════════ */
+.network-inner{
+  padding:16px;
+  height:360px;
+  position:relative;overflow:hidden;
+}
+.network-title{font-size:15px;font-weight:600;color:var(--color-text);margin-bottom:6px}
+.bg-grid-net{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(0,0,0,.07) 1px,transparent 0),
+    linear-gradient(90deg,rgba(0,0,0,.07) 1px,transparent 0);
+  background-size:36px 36px;
+}
+.network-content{position:relative;z-index:1;height:100%}
+.network-svg{width:100%;height:auto;display:block}
+
+/* ═══════════════════════════════════════════════════
+   CARD: NOTE
+   ═══════════════════════════════════════════════════ */
+.note-inner{
+  height:185px;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  padding:28px;text-align:center;
+}
+.note-text{font-size:17px;color:var(--color-text);line-height:1.55}
+
+/* ═══════════════════════════════════════════════════
+   CARD: CAREER TRAJECTORY
+   ═══════════════════════════════════════════════════ */
+.career-inner{
+  padding:var(--pad);
+  height:360px;
+  display:flex;flex-direction:column;
+}
+.career-bar-col{
+  display:flex;flex-direction:column;gap:3px;
+  width:44px;flex-shrink:0;height:260px;
+}
+.career-bar-seg{width:44px;border-radius:6px}
+.career-flow{
+  flex:1;display:flex;flex-direction:column;
+  justify-content:space-around;
+  padding-left:10px;
+}
+.career-person{display:flex;align-items:center;gap:10px}
+.career-avatar{
+  width:40px;height:40px;border-radius:50%;
+  object-fit:cover;flex-shrink:0;
+  border:2px solid #f0f0f0;
+}
+.career-person-info .name{font-size:12.5px;font-weight:600;color:var(--color-text)}
+.career-person-info .role{font-size:11px;color:#666;margin-top:1px}
+
+/* ═══════════════════════════════════════════════════
+   CARD: GITHUB
+   ═══════════════════════════════════════════════════ */
+.github-inner{
+  padding:var(--pad);
+  height:185px;
+  display:flex;flex-direction:column;
+}
+.github-header{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.gh-logo{
+  width:34px;height:34px;border-radius:9px;
+  background:#24292e;display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.gh-repo{font-size:13px;font-weight:600;color:var(--color-accent)}
+.gh-repo:hover{text-decoration:underline}
+.gh-graph-wrap{padding:0 16px 14px}
+.gh-graph-wrap canvas{width:100%;border-radius:6px;display:block}
+
+/* ═══════════════════════════════════════════════════
+   CARD: TWITTER/X
+   ═══════════════════════════════════════════════════ */
+.twitter-inner{
+  padding:var(--pad);
+  height:360px;
+  display:flex;flex-direction:column;gap:10px;
+}
+.twitter-header{display:flex;align-items:center;gap:10px}
+.twitter-logo{
+  width:38px;height:38px;border-radius:10px;
+  background:#000;display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.tweet-box{
+  background:#f9f9f9;border-radius:14px;
+  padding:12px 14px;
+  font-size:13px;color:#222;line-height:1.5;flex:1;
+}
+.tweet-img{width:100%;border-radius:10px;object-fit:cover;max-height:120px;margin-top:8px}
+.followers-count{font-size:22px;font-weight:700;color:var(--color-text)}
+.followers-label{font-size:12px;color:var(--color-dim)}
+
+/* ═══════════════════════════════════════════════════
+   CARD: SPOTIFY
+   ═══════════════════════════════════════════════════ */
+.spotify-inner{
+  padding:16px;
+  height:185px;
+  display:flex;flex-direction:column;
+}
+.spotify-header{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.spotify-logo{
+  width:34px;height:34px;border-radius:50%;
+  background:#1DB954;display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.spotify-screenshot{
+  width:100%;border-radius:10px;
+  object-fit:cover;height:88px;margin-top:auto;
+}
+
+/* ═══════════════════════════════════════════════════
+   MOBILE HEADER
+   ═══════════════════════════════════════════════════ */
+.mobile-header{
+  display:none;
+  position:fixed;top:0;left:0;right:0;
+  height:52px;z-index:100;
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  background:rgba(251,251,250,.88);
+  border-bottom:1px solid var(--color-border);
+  align-items:center;justify-content:space-between;
+  padding:0 16px;
+}
+.mobile-header-name{font-size:14px;font-weight:600;color:var(--color-text)}
+.share-btn{
+  display:flex;align-items:center;gap:5px;
+  font-size:12px;font-weight:500;color:var(--color-text);
+  background:none;border:none;cursor:pointer;
+  padding:7px 10px;border-radius:8px;
+}
+.share-btn:hover{background:rgba(0,0,0,.05)}
+
+/* ═══════════════════════════════════════════════════
+   FOOTER
+   ═══════════════════════════════════════════════════ */
+.footer{
+  width:100%;
+  display:flex;align-items:center;justify-content:center;
+  gap:10px;padding:20px 24px 28px;
+}
+.mydinq-btn{
+  display:flex;align-items:center;gap:8px;
+  background:#fff;border-radius:100px;
+  padding:8px 16px 8px 10px;
+  box-shadow:0 2px 12px rgba(0,0,0,.12);
+  font-size:13px;font-weight:600;color:var(--color-text);
+  transition:box-shadow .2s;
+}
+.mydinq-btn:hover{box-shadow:0 4px 20px rgba(0,0,0,.18)}
+.mydinq-avatar{width:28px;height:28px;border-radius:50%;object-fit:cover}
+.footer-discord{
+  width:36px;height:36px;background:#5865F2;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 2px 8px rgba(88,101,242,.35);
+  transition:transform .15s;
+}
+.footer-discord:hover{transform:scale(1.08)}
+
+/* ═══════════════════════════════════════════════════
+   SCROLLBAR
+   ═══════════════════════════════════════════════════ */
+*{scrollbar-width:thin;scrollbar-color:rgba(0,0,0,.15) transparent}
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(0,0,0,.15);border-radius:3px}
+
+/* ═══════════════════════════════════════════════════
+   ANIMATIONS
+   ═══════════════════════════════════════════════════ */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(10px)}
+  to  {opacity:1;transform:translateY(0)}
+}
+.sidebar{animation:fadeUp .4s ease-out both}
+.card{animation:fadeUp .45s ease-out both}
+.card:nth-child(1){animation-delay:.05s}
+.card:nth-child(2){animation-delay:.10s}
+.card:nth-child(3){animation-delay:.15s}
+.card:nth-child(4){animation-delay:.20s}
+.card:nth-child(5){animation-delay:.25s}
+.card:nth-child(6){animation-delay:.30s}
+.card:nth-child(7){animation-delay:.35s}
+.card:nth-child(8){animation-delay:.40s}
+.card:nth-child(9){animation-delay:.45s}
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE — ≥ 1200px (wide desktop)
+   ═══════════════════════════════════════════════════ */
+@media(min-width:1200px){
+  :root{--sidebar-w:380px;--sidebar-pad:64px 32px 64px 32px}
+  .card-grid{max-width:830px}
+}
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE — ≤ 900px (tablet / mobile layout switch)
+   ═══════════════════════════════════════════════════ */
+@media(max-width:900px){
+  .mobile-header{display:flex}
+
+  .page-wrap{flex-direction:column}
+
+  .sidebar{
+    position:static;
+    width:100%;height:auto;
+    padding:68px 20px 20px;
+    border-bottom:1px solid var(--color-border);
+  }
+
+  .main{
+    padding:24px 16px 32px;
+  }
+
+  .card-grid{max-width:100%}
+
+  .linkedin-card-inner,
+  .network-inner,
+  .career-inner,
+  .twitter-inner{height:320px}
+
+  .avatar-wrap{width:120px;height:120px}
+  .profile-name{font-size:22px}
+}
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE — ≤ 700px (small tablet)
+   ═══════════════════════════════════════════════════ */
+@media(max-width:700px){
+  :root{--card-w:100%}
+
+  .card{flex-basis:100%}
+  .card-full{flex-basis:100%}
+
+  .hobby-card{flex-direction:column}
+  .hobby-img{width:100%;height:200px;min-height:unset}
+
+  .linkedin-card-inner,
+  .network-inner,
+  .career-inner,
+  .twitter-inner{height:280px}
+
+  .note-inner{height:160px}
+  .note-text{font-size:15px}
+
+  .github-inner,
+  .spotify-inner{height:auto;min-height:160px}
+
+  .career-bar-col{height:200px}
+}
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE — ≤ 480px (mobile)
+   ═══════════════════════════════════════════════════ */
+@media(max-width:480px){
+  .main{padding:16px 12px 24px}
+
+  .card{border-radius:16px}
+
+  .card-title{font-size:14px}
+  .card-desc{font-size:12px}
+
+  .profile-name{font-size:20px}
+  .tag{font-size:11.5px;height:28px;padding:0 9px}
+
+  .note-text{font-size:14px}
+
+  .linkedin-card-inner,
+  .network-inner,
+  .career-inner,
+  .twitter-inner{height:260px}
+
+  .followers-count{font-size:18px}
+
+  .sidebar{padding:64px 14px 16px}
+}
+
+/* ═══════════════════════════════════════════════════
+   ACCESSIBILITY — reduced motion
+   ═══════════════════════════════════════════════════ */
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body>
+
+<!-- Mobile header (shown ≤900px) -->
+<header class="mobile-header">
+  <span class="mobile-header-name">Thuvaragan Gobalakrishnan</span>
+  <button class="share-btn" onclick="navigator.share&&navigator.share({title:'Thuvaragan Gobalakrishnan',url:location.href})">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+    Share
+  </button>
+</header>
+
+<div class="page-wrap">
+
+  <!-- ═══════════ SIDEBAR ═══════════ -->
+  <aside class="sidebar">
+    <div class="avatar-wrap">
+      <img
+        src="https://assets.dinq.me/uploads/images/avatars/c0877f0c-979e-4205-bc63-45f4ec319070/af3d2098a9c8ee0ca9ad77decd08b8a2.jpg"
+        alt="Thuvaragan Gobalakrishnan"
+        onerror="this.src='images/af3d2098a9c8ee0ca9ad77decd08b8a2.jpg'"
+        loading="eager"
+      >
+    </div>
+
+    <h1 class="profile-name">Thuvaragan Gobalakrishnan</h1>
+
+    <ul class="profile-meta">
+      <li>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        <span>Manager, Digital Marketing (cluster), Pulse Hotels &amp; Resorts</span>
+      </li>
+      <li>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        <span>MBA - UWE, 2026</span>
+      </li>
+      <li>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        <span>gthuva@yahoo.com</span>
+      </li>
+      <li>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Mal&eacute;, Maldives</span>
+      </li>
+      <li>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span>10:30 (UTC +05:00)</span>
+      </li>
+    </ul>
+
+    <div class="tags">
+      <span class="tag tag-yellow">Growth + Performance</span>
+      <span class="tag tag-red">SEO</span>
+      <span class="tag tag-green">Analytics</span>
+      <span class="tag tag-blue">AI + Blockchain</span>
+      <span class="tag tag-purple">Dev</span>
+    </div>
+
+    <p class="bio">6+ Years in Digital Marketing. Accidental Strategist | Generalist | building&#9874;&#65039; + advocating for @team.W2S | Hustler + Hacker + Hipster</p>
+
+    <p class="built-by"><a href="https://dinq.me" target="_blank" rel="noopener">Built by DINQ.me</a></p>
+  </aside>
+
+  <!-- ═══════════ MAIN ═══════════ -->
+  <main class="main">
+    <div class="card-grid">
+
+      <!-- ROW 1: Performance Marketing + SEO -->
+      <div class="card-row">
+
+        <!-- CARD 1 – Performance Marketing -->
+        <article class="card">
+          <img class="card-img"
+            src="https://assets.dinq.me/uploads/images/c0877f0c-979e-4205-bc63-45f4ec319070/1772541057_UpWDPgxcHiR1e.webp"
+            alt="Performance Marketing cover"
+            loading="lazy">
+          <div class="card-pad">
+            <div class="label-pill" aria-label="Previous Works">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+              Previous Works
+            </div>
+            <h2 class="card-title">Performance Marketing</h2>
+            <p class="card-desc">Check my previous works of campaigns and the clients..</p>
+            <a class="link-btn" href="https://docs.google.com/document/d/1yILxXXBHJdBxZ7Fe01Y-wihbqi8wq8_8hYN10wFt_f8/edit?usp=sharing" target="_blank" rel="noopener">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Right click open the link &#128072;&#127996;
+            </a>
+          </div>
+        </article>
+
+        <!-- CARD 2 – SEO + Growth Marketing -->
+        <article class="card">
+          <img class="card-img"
+            src="https://assets.dinq.me/uploads/images/c0877f0c-979e-4205-bc63-45f4ec319070/1772541763_3ohryhNgUwwZyxgktq.webp"
+            alt="SEO and Growth Marketing cover"
+            loading="lazy">
+          <div class="card-pad">
+            <div class="label-pill">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+              Previous Works
+            </div>
+            <h2 class="card-title">SEO + Growth Marketing</h2>
+            <p class="card-desc">Check my previous works of SEO / GEO / Growth things and the clients..</p>
+            <div style="margin-bottom:6px">
+              <span class="code-tag">SEO</span><span class="code-tag">GEO</span><span class="code-tag">Growth</span>
+            </div>
+            <a class="link-btn" href="https://drive.google.com/drive/folders/1nA56v-SMpzA4XM2DL58xAx_VlX6Av5Ea?usp=drive_link" target="_blank" rel="noopener">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Right click open the link &#128072;&#127996;
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- ROW 2: Network + LinkedIn Chart -->
+      <div class="card-row">
+
+        <!-- CARD 3 – Network -->
+        <article class="card">
+          <div class="network-inner">
+            <div class="bg-grid-net" aria-hidden="true"></div>
+            <div class="network-content">
+              <p class="network-title">Network</p>
+              <!-- viewBox makes this SVG fully responsive -->
+              <svg class="network-svg" viewBox="0 0 348 320" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Thuvaragan's professional network visualization">
+                <defs>
+                  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.15"/>
+                  </filter>
+                </defs>
+                <!-- Connection lines -->
+                <line x1="174" y1="155" x2="60"  y2="62"  stroke="#ccc" stroke-width="1.2" stroke-dasharray="4,3"/>
+                <line x1="174" y1="155" x2="174" y2="62"  stroke="#ccc" stroke-width="1.2" stroke-dasharray="4,3"/>
+                <line x1="174" y1="155" x2="290" y2="62"  stroke="#ccc" stroke-width="1.2" stroke-dasharray="4,3"/>
+                <line x1="174" y1="155" x2="60"  y2="248" stroke="#ccc" stroke-width="1.2" stroke-dasharray="4,3"/>
+                <line x1="174" y1="155" x2="174" y2="248" stroke="#ccc" stroke-width="1.2" stroke-dasharray="4,3"/>
+                <line x1="174" y1="155" x2="290" y2="248" stroke="#ccc" stroke-width="1.2" stroke-dasharray="4,3"/>
+
+                <!-- CENTER – Thuvaragan -->
+                <circle cx="174" cy="155" r="32" fill="#F5D94E" filter="url(#shadow)"/>
+                <clipPath id="clip-center"><circle cx="174" cy="155" r="28"/></clipPath>
+                <image href="https://assets.dinq.me/uploads/images/avatars/c0877f0c-979e-4205-bc63-45f4ec319070/af3d2098a9c8ee0ca9ad77decd08b8a2.jpg"
+                  x="146" y="127" width="56" height="56" clip-path="url(#clip-center)" preserveAspectRatio="xMidYMid slice"/>
+
+                <!-- TOP ROW – blue pill nodes -->
+                <rect x="16"  y="36" width="88" height="52" rx="26" fill="#DBEAFE" filter="url(#shadow)"/>
+                <clipPath id="clip1"><circle cx="42" cy="62" r="20"/></clipPath>
+                <image href="https://assets.dinq.me/uploads/images/c0877f0c-979e-4205-bc63-45f4ec319070/1772603540_Vajira.jpg"
+                  x="22" y="42" width="40" height="40" clip-path="url(#clip1)" preserveAspectRatio="xMidYMid slice"/>
+                <circle cx="42" cy="62" r="20" fill="none" stroke="#BFDBFE" stroke-width="1.5"/>
+                <text x="68" y="57" font-family="GeistSans,sans-serif" font-size="9.5" fill="#1e40af" font-weight="600">Vajira</text>
+                <text x="68" y="69" font-family="GeistSans,sans-serif" font-size="8.5" fill="#3b82f6">Kashyapa</text>
+
+                <rect x="130" y="36" width="88" height="52" rx="26" fill="#DBEAFE" filter="url(#shadow)"/>
+                <clipPath id="clip2"><circle cx="156" cy="62" r="20"/></clipPath>
+                <image href="https://media.licdn.com/dms/image/v2/D4E03AQEFyT3fM0aBwg/profile-displayphoto-shrink_200_200/B4EZOTFIqXGQAc-/0/1733371272127"
+                  x="136" y="42" width="40" height="40" clip-path="url(#clip2)" preserveAspectRatio="xMidYMid slice"/>
+                <circle cx="156" cy="62" r="20" fill="none" stroke="#BFDBFE" stroke-width="1.5"/>
+                <text x="182" y="57" font-family="GeistSans,sans-serif" font-size="9.5" fill="#1e40af" font-weight="600">Mohamed</text>
+                <text x="182" y="69" font-family="GeistSans,sans-serif" font-size="8.5" fill="#3b82f6">Shafraz</text>
+
+                <rect x="244" y="36" width="88" height="52" rx="26" fill="#DBEAFE" filter="url(#shadow)"/>
+                <clipPath id="clip3"><circle cx="270" cy="62" r="20"/></clipPath>
+                <image href="https://media.licdn.com/dms/image/v2/D4E03AQFNt4bZiSf5SQ/profile-displayphoto-shrink_200_200/B4EZOuGYBjHMAc-/0/1733836068938"
+                  x="250" y="42" width="40" height="40" clip-path="url(#clip3)" preserveAspectRatio="xMidYMid slice"/>
+                <circle cx="270" cy="62" r="20" fill="none" stroke="#BFDBFE" stroke-width="1.5"/>
+                <text x="296" y="57" font-family="GeistSans,sans-serif" font-size="9.5" fill="#1e40af" font-weight="600">Nashra</text>
+                <text x="296" y="69" font-family="GeistSans,sans-serif" font-size="8.5" fill="#3b82f6">Hassan</text>
+
+                <!-- BOTTOM ROW – purple pill nodes -->
+                <rect x="16"  y="222" width="88" height="52" rx="26" fill="#EDE9FE" filter="url(#shadow)"/>
+                <clipPath id="clip4"><circle cx="42" cy="248" r="20"/></clipPath>
+                <image href="https://media.licdn.com/dms/image/v2/D4E03AQFqpKk4HwTZQg/profile-displayphoto-shrink_200_200/B4EZO_jdZqHQAc-/0/1734173043155"
+                  x="22" y="228" width="40" height="40" clip-path="url(#clip4)" preserveAspectRatio="xMidYMid slice"/>
+                <circle cx="42" cy="248" r="20" fill="none" stroke="#DDD6FE" stroke-width="1.5"/>
+                <text x="68" y="243" font-family="GeistSans,sans-serif" font-size="9.5" fill="#5b21b6" font-weight="600">Luqman</text>
+                <text x="68" y="255" font-family="GeistSans,sans-serif" font-size="8.5" fill="#7c3aed">Wadood</text>
+
+                <rect x="130" y="222" width="88" height="52" rx="26" fill="#EDE9FE" filter="url(#shadow)"/>
+                <clipPath id="clip5"><circle cx="156" cy="248" r="20"/></clipPath>
+                <image href="https://media.licdn.com/dms/image/v2/D4E03AQEDIBxHRJ2A4Q/profile-displayphoto-shrink_200_200/B4EZO-1fZHGQAY-/0/1734124879484"
+                  x="136" y="228" width="40" height="40" clip-path="url(#clip5)" preserveAspectRatio="xMidYMid slice"/>
+                <circle cx="156" cy="248" r="20" fill="none" stroke="#DDD6FE" stroke-width="1.5"/>
+                <text x="182" y="243" font-family="GeistSans,sans-serif" font-size="9.5" fill="#5b21b6" font-weight="600">Murad</text>
+                <text x="182" y="255" font-family="GeistSans,sans-serif" font-size="8.5" fill="#7c3aed">Hassan</text>
+
+                <rect x="244" y="222" width="88" height="52" rx="26" fill="#EDE9FE" filter="url(#shadow)"/>
+                <clipPath id="clip6"><circle cx="270" cy="248" r="20"/></clipPath>
+                <image href="https://media.licdn.com/dms/image/v2/D4E03AQH1gNj_j_fSLA/profile-displayphoto-shrink_200_200/B4EZO-DV4XGcAY-/0/1734082095413"
+                  x="250" y="228" width="40" height="40" clip-path="url(#clip6)" preserveAspectRatio="xMidYMid slice"/>
+                <circle cx="270" cy="248" r="20" fill="none" stroke="#DDD6FE" stroke-width="1.5"/>
+                <text x="296" y="243" font-family="GeistSans,sans-serif" font-size="9.5" fill="#5b21b6" font-weight="600">Malinda</text>
+                <text x="296" y="255" font-family="GeistSans,sans-serif" font-size="8.5" fill="#7c3aed">Loku P.</text>
+
+                <!-- Center label -->
+                <text x="174" y="200" text-anchor="middle" font-family="GeistSans,sans-serif" font-size="10" fill="#171717" font-weight="700">Thuvaragan</text>
+                <text x="174" y="212" text-anchor="middle" font-family="GeistSans,sans-serif" font-size="9" fill="#555">Gobalakrishnan</text>
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 4 – LinkedIn Career Chart -->
+        <article class="card">
+          <div class="linkedin-card-inner">
+            <div class="linkedin-header">
+              <div class="linkedin-logo" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div>
+                <div style="font-size:14px;font-weight:600">LinkedIn Career</div>
+                <div style="font-size:11px;color:#888">Career timeline</div>
+              </div>
+            </div>
+            <div class="chart-area">
+              <canvas id="career-chart" role="img" aria-label="LinkedIn career progression chart"></canvas>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- ROW 3: Hobbies (full-width) -->
+      <div class="card-row">
+        <article class="card card-full">
+          <div class="hobby-card">
+            <img class="hobby-img"
+              src="https://assets.dinq.me/uploads/images/c0877f0c-979e-4205-bc63-45f4ec319070/1772541756_fjXt3KMcnxQjnfuhLu.webp"
+              alt="Hobbies: market analysis and physical activity"
+              loading="lazy">
+            <div class="card-pad" style="display:flex;flex-direction:column;justify-content:center">
+              <div class="label-pill hobbies">&#127919; Hobbies</div>
+              <h2 class="card-title" style="font-size:17px">As a hobby — I analyze markets and try to be active physically</h2>
+              <p class="card-desc">Follow me on socials to get to know more about me..</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- ROW 4: Spotify + Note -->
+      <div class="card-row">
+
+        <!-- CARD 5 – Spotify -->
+        <article class="card">
+          <div class="spotify-inner">
+            <div class="spotify-header">
+              <div class="spotify-logo" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+              </div>
+              <div>
+                <div style="font-size:13px;font-weight:600">Spotify</div>
+                <a href="https://open.spotify.com/user/31trewszrbvsnstny2hjubyiilp4?si=d434cbfbc80c4c7b"
+                   target="_blank" rel="noopener"
+                   style="font-size:11px;color:#888">open.spotify.com/user/31trew...</a>
+              </div>
+            </div>
+            <img class="spotify-screenshot"
+              src="https://assets.dinq.me/uploads/screenshots/c0877f0c-979e-4205-bc63-45f4ec319070/a7c48a9fb202946fc1ef2678ebd52577.png"
+              alt="Spotify playlist screenshot"
+              loading="lazy">
+          </div>
+        </article>
+
+        <!-- CARD 6 – Note -->
+        <article class="card">
+          <div class="note-inner">
+            <p class="note-text">Hi visitor,<br><br>Hope you will hire me..</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- ROW 5: Career Trajectory + GitHub -->
+      <div class="card-row">
+
+        <!-- CARD 7 – Career Trajectory -->
+        <article class="card">
+          <div class="career-inner">
+            <h2 class="card-title" style="margin-bottom:14px">Career Trajectory</h2>
+            <div style="display:flex;gap:16px;height:100%;padding-bottom:8px">
+              <!-- Vertical stacked bar -->
+              <div class="career-bar-col">
+                <div style="background:#A78BFA;border-radius:6px;flex:1;min-height:0"></div>
+                <div style="background:#60A5FA;border-radius:6px;flex:1.4;min-height:0"></div>
+                <div style="background:#86EFAC;border-radius:6px;flex:1.6;min-height:0"></div>
+              </div>
+              <!-- Flow to people -->
+              <div class="career-flow" style="position:relative">
+                <svg style="position:absolute;left:-12px;top:0;width:30px;height:100%;overflow:visible" viewBox="0 0 30 260" aria-hidden="true">
+                  <path d="M0,40 C15,40 15,80 30,80"   stroke="#e0e0e0" stroke-width="1.5" fill="none"/>
+                  <path d="M0,130 C15,130 15,130 30,130" stroke="#e0e0e0" stroke-width="1.5" fill="none"/>
+                  <path d="M0,220 C15,220 15,180 30,180" stroke="#e0e0e0" stroke-width="1.5" fill="none"/>
+                </svg>
+                <div class="career-person">
+                  <img class="career-avatar" src="https://www.patricklewis.io/img/portrait.jpg" alt="Patrick Lewis">
+                  <div class="career-person-info">
+                    <div class="name">Patrick Lewis</div>
+                    <div class="role">Researcher, RAG Paper co-author</div>
+                  </div>
+                </div>
+                <div class="career-person">
+                  <img class="career-avatar" src="https://framerusercontent.com/images/eZokgRQQicwS6HVXjnp7wu23oBg.png?scale-down-to=512" alt="Daniel Han">
+                  <div class="career-person-info">
+                    <div class="name">Daniel Han</div>
+                    <div class="role">Developer, UNSW</div>
+                  </div>
+                </div>
+                <div class="career-person">
+                  <img class="career-avatar" src="https://assets.dinq.me/uploads/images/ee4c5d74-a298-47fa-b3cf-0af59bff5824/1768242001_1743400831091.jpeg" alt="Brendan Foody">
+                  <div class="career-person-info">
+                    <div class="name">Brendan Foody</div>
+                    <div class="role">Founder, Mercor CEO</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 8 – GitHub -->
+        <article class="card">
+          <div class="github-inner">
+            <div class="github-header">
+              <div class="gh-logo" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </div>
+              <div>
+                <div style="font-size:14px;font-weight:600">GitHub</div>
+                <a href="https://github.com/0xgthuva" target="_blank" rel="noopener" style="font-size:11px;color:#888">github.com/0xgthuva</a>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <span style="font-size:13px;font-weight:600">1 Star</span>
+            </div>
+            <div style="margin-bottom:8px">
+              <span class="code-tag" style="background:#e5e7eb">PHP</span>
+              <span class="code-tag" style="background:#F7DF1E;color:#333">JavaScript</span>
+              <span class="code-tag" style="background:#e5e7eb">HTML</span>
+            </div>
+            <a class="gh-repo" href="https://github.com/0xgthuva/OrganicCosmetic-OnlineStore" target="_blank" rel="noopener">OrganicCosmetic-OnlineStore</a>
+            <p style="font-size:11.5px;color:#666;margin-top:4px;line-height:1.4">0xgthuva specializes in PHP, JavaScript and HTML projects&hellip;</p>
+          </div>
+          <div class="gh-graph-wrap">
+            <canvas id="gh-graph" role="img" aria-label="GitHub contribution graph"></canvas>
+          </div>
+        </article>
+      </div>
+
+      <!-- ROW 6: Twitter/X -->
+      <div class="card-row">
+
+        <!-- CARD 9 – Twitter/X -->
+        <article class="card">
+          <div class="twitter-inner">
+            <div class="twitter-header">
+              <div class="twitter-logo" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </div>
+              <div style="flex:1">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:14px;font-weight:600">TylerD from FC</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#1D9BF0" aria-label="Verified"><path d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91-1.01-1-2.52-1.27-3.91-.81-.66-1.31-1.91-2.19-3.34-2.19-1.43 0-2.67.88-3.34 2.19-1.39-.46-2.9-.2-3.91.81-1 1.01-1.27 2.52-.81 3.91C2.63 9.33 1.75 10.57 1.75 12c0 1.43.88 2.67 2.19 3.34-.46 1.39-.2 2.9.81 3.91 1.01 1 2.52 1.27 3.91.81.66 1.31 1.91 2.19 3.34 2.19 1.43 0 2.67-.88 3.34-2.19 1.39.46 2.9.2 3.91-.81 1-1.01 1.27-2.52.81-3.91 1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"/></svg>
+                </div>
+                <div style="font-size:12px;color:#888">@0xgthuvaDEV</div>
+              </div>
+              <img src="https://pbs.twimg.com/profile_images/1488864299837710348/icL8dM3K_normal.jpg"
+                alt="Twitter profile photo"
+                style="width:38px;height:38px;border-radius:50%;object-fit:cover">
+            </div>
+            <div style="display:flex;align-items:baseline;gap:4px">
+              <span class="followers-count">448</span>
+              <span class="followers-label">Followers</span>
+            </div>
+            <div style="font-size:12px;color:#888;margin-top:-4px">Top Smart Followers</div>
+            <div style="display:flex">
+              <div style="display:flex">
+                <div style="width:26px;height:26px;border-radius:50%;border:2px solid #fff;overflow:hidden;z-index:4">
+                  <img src="https://pbs.twimg.com/profile_images/1488864299837710348/icL8dM3K_normal.jpg" width="26" height="26" style="object-fit:cover" alt="">
+                </div>
+                <div style="width:26px;height:26px;border-radius:50%;background:#fce7f3;border:2px solid #fff;margin-left:-7px;z-index:3" aria-hidden="true"></div>
+                <div style="width:26px;height:26px;border-radius:50%;background:#dcfce7;border:2px solid #fff;margin-left:-7px;z-index:2" aria-hidden="true"></div>
+                <div style="width:26px;height:26px;border-radius:50%;background:#fef3c7;border:2px solid #fff;margin-left:-7px;z-index:1" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="tweet-box">
+              <p>these chinese models are insane..&#128293; with 35 billion total params, handles up to native context length of 262,144 tokens..</p>
+              <img src="https://pbs.twimg.com/media/HCeEZfTaUAA1rbK.jpg:large" alt="Tweet image showing model specs" class="tweet-img" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+        <!-- Placeholder slot (add a card here if needed) -->
+        <div style="flex:1 1 var(--card-w);min-width:0"></div>
+      </div>
+
+    </div><!-- /card-grid -->
+
+    <!-- Footer inside main scroll area -->
+    <footer class="footer">
+      <a class="mydinq-btn" href="https://dinq.me" target="_blank" rel="noopener">
+        <img class="mydinq-avatar"
+          src="images/af3d2098a9c8ee0ca9ad77decd08b8a2.jpg"
+          alt="Thuvaragan avatar">
+        My DINQ
+      </a>
+      <a class="footer-discord" href="https://discord.gg/dinq" target="_blank" rel="noopener" aria-label="Join Discord">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="white"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057.1 18.08.114 18.1.132 18.11a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+      </a>
+    </footer>
+  </main>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ═══════════════════════════════════════════════════
+     RESPONSIVE CANVAS HELPER
+     Both canvas charts use this pattern:
+     - ResizeObserver redraws whenever the container resizes
+     - DPR-aware for sharp rendering on Retina/HiDPI displays
+     - drawFn receives (ctx, logicalWidth, logicalHeight)
+     ═══════════════════════════════════════════════════ */
+  function makeResponsiveCanvas(id, drawFn, aspectW, aspectH) {
+    var canvas = document.getElementById(id);
+    if (!canvas) return;
+    var parent = canvas.parentElement;
+
+    function render() {
+      var w = parent.clientWidth || aspectW;
+      if (w < 1) return;
+      var h = Math.round(w * (aspectH / aspectW));
+      var dpr = window.devicePixelRatio || 1;
+
+      canvas.width  = Math.round(w * dpr);
+      canvas.height = Math.round(h * dpr);
+      canvas.style.width  = w + 'px';
+      canvas.style.height = h + 'px';
+
+      var ctx = canvas.getContext('2d');
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      drawFn(ctx, w, h);
+    }
+
+    if (typeof ResizeObserver !== 'undefined') {
+      new ResizeObserver(render).observe(parent);
+    } else {
+      window.addEventListener('resize', render);
+    }
+    render();
+  }
+
+  /* ═══════════════════════════════════════════════════
+     LINKEDIN CAREER CHART
+     ═══════════════════════════════════════════════════ */
+  function drawCareerChart(ctx, W, H) {
+    ctx.clearRect(0, 0, W, H);
+
+    var pad = { l: 40, r: 16, t: 16, b: 36 };
+    var cw  = W - pad.l - pad.r;
+    var ch  = H - pad.t - pad.b;
+
+    var years  = [2022, 2022, 2023, 2024, 2025, 2026];
+    var values = [0.05, 0.15, 0.35, 0.55, 0.75, 0.95];
+
+    /* Grid lines */
+    ctx.strokeStyle = 'rgba(0,0,0,0.07)';
+    ctx.lineWidth = 1;
+    for (var i = 0; i <= 4; i++) {
+      var gy = pad.t + ch - (ch * i / 4);
+      ctx.beginPath(); ctx.moveTo(pad.l, gy); ctx.lineTo(pad.l + cw, gy); ctx.stroke();
+    }
+
+    /* X-axis labels */
+    ctx.fillStyle = '#999';
+    ctx.font = Math.max(9, Math.round(W * 0.025)) + 'px GeistSans,sans-serif';
+    ctx.textAlign = 'center';
+    var xstep = cw / (values.length - 1);
+    var lastLabel = null;
+    years.forEach(function (yr, idx) {
+      if (yr !== lastLabel) {
+        ctx.fillText(yr, pad.l + idx * xstep, H - 6);
+        lastLabel = yr;
+      }
+    });
+
+    /* Data points */
+    var pts = values.map(function (v, idx) {
+      return { x: pad.l + idx * xstep, y: pad.t + ch - v * ch };
+    });
+
+    /* Fill gradient */
+    var grad = ctx.createLinearGradient(0, pad.t, 0, pad.t + ch);
+    grad.addColorStop(0, 'rgba(20,135,250,0.22)');
+    grad.addColorStop(1, 'rgba(20,135,250,0.02)');
+
+    ctx.beginPath();
+    ctx.moveTo(pts[0].x, pts[0].y);
+    for (var j = 1; j < pts.length; j++) {
+      var cx = (pts[j-1].x + pts[j].x) / 2;
+      ctx.bezierCurveTo(cx, pts[j-1].y, cx, pts[j].y, pts[j].x, pts[j].y);
+    }
+    ctx.lineTo(pts[pts.length-1].x, pad.t + ch);
+    ctx.lineTo(pts[0].x, pad.t + ch);
+    ctx.closePath();
+    ctx.fillStyle = grad;
+    ctx.fill();
+
+    /* Line */
+    ctx.beginPath();
+    ctx.moveTo(pts[0].x, pts[0].y);
+    for (var k = 1; k < pts.length; k++) {
+      var mx = (pts[k-1].x + pts[k].x) / 2;
+      ctx.bezierCurveTo(mx, pts[k-1].y, mx, pts[k].y, pts[k].x, pts[k].y);
+    }
+    ctx.strokeStyle = '#1487FA';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    /* Company logo nodes */
+    var logos = [
+      null,
+      'https://icons.duckduckgo.com/ip3/walkwithsrilanka.com.ico',
+      'https://icons.duckduckgo.com/ip3/walkwithsrilanka.com.ico',
+      'https://icons.duckduckgo.com/ip3/pulsehotels.com.ico',
+      'https://icons.duckduckgo.com/ip3/pulsehotels.com.ico',
+      'https://icons.duckduckgo.com/ip3/uwe.ac.uk.ico'
+    ];
+    var nodeR = Math.max(8, Math.round(W * 0.018));
+
+    pts.forEach(function (pt, idx) {
+      ctx.beginPath();
+      ctx.arc(pt.x, pt.y, nodeR + 3, 0, Math.PI * 2);
+      ctx.fillStyle = '#fff';
+      ctx.fill();
+      ctx.strokeStyle = '#e0e0e0';
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+
+      ctx.beginPath();
+      ctx.arc(pt.x, pt.y, 4, 0, Math.PI * 2);
+      ctx.fillStyle = '#1487FA';
+      ctx.fill();
+
+      if (logos[idx]) {
+        (function (p, url, r) {
+          var img = new Image();
+          img.crossOrigin = 'anonymous';
+          img.onload = function () {
+            ctx.save();
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, r, 0, Math.PI * 2);
+            ctx.clip();
+            ctx.drawImage(img, p.x - r, p.y - r, r * 2, r * 2);
+            ctx.restore();
+          };
+          img.src = url;
+        }(pt, logos[idx], nodeR + 2));
+      }
+    });
+  }
+
+  /* ═══════════════════════════════════════════════════
+     GITHUB CONTRIBUTION GRAPH
+     ═══════════════════════════════════════════════════ */
+  function drawGithubGraph(ctx, W, H) {
+    ctx.clearRect(0, 0, W, H);
+
+    var COLS = 52, ROWS = 7;
+    var gapX = 2, gapY = 2;
+    var cellW = Math.floor((W - gapX * (COLS - 1)) / COLS);
+    var cellH = Math.floor((H - gapY * (ROWS - 1)) / ROWS);
+    var colors = ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'];
+
+    ctx.fillStyle = '#fff';
+    ctx.fillRect(0, 0, W, H);
+
+    for (var c = 0; c < COLS; c++) {
+      for (var r = 0; r < ROWS; r++) {
+        var weight = c / COLS;
+        var rand   = Math.random();
+        var level  = 0;
+        if (rand < weight * 0.38) level = 1;
+        if (rand < weight * 0.18) level = 2;
+        if (rand < weight * 0.07) level = 3;
+        if (rand < weight * 0.02) level = 4;
+
+        var x = c * (cellW + gapX);
+        var y = r * (cellH + gapY);
+
+        ctx.fillStyle = colors[level];
+        if (ctx.roundRect) {
+          ctx.beginPath();
+          ctx.roundRect(x, y, cellW, cellH, 2);
+          ctx.fill();
+        } else {
+          ctx.fillRect(x, y, cellW, cellH);
+        }
+      }
+    }
+  }
+
+  /* ═══════════════════════════════════════════════════
+     INIT
+     ═══════════════════════════════════════════════════ */
+  function init() {
+    makeResponsiveCanvas('career-chart', drawCareerChart, 340, 240);
+    makeResponsiveCanvas('gh-graph',     drawGithubGraph,  344, 60);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+}());
+</script>
+</body>
+</html>
