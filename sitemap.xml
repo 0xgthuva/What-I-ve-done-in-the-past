@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  sitemap.xml — Thuvaragan Gobalakrishnan Portfolio
+  ─────────────────────────────────────────────────
+  BEFORE DEPLOYING:
+    Replace YOUR-DOMAIN.com in the <loc> tag below with your actual domain.
+
+  After deploying, submit this sitemap in Google Search Console:
+    https://search.google.com/search-console → Sitemaps
+    → Add new sitemap → https://YOUR-DOMAIN.com/sitemap.xml
+
+  Validate at: https://www.xml-sitemaps.com/validate-xml-sitemap.html
+-->
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://www.sitemaps.org/schemas/sitemap/0.9
+    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <url>
+    <!-- Main portfolio page (only page — single-page site) -->
+    <loc>https://YOUR-DOMAIN.com/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+</urlset>

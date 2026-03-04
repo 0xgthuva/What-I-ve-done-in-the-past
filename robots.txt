@@ -1,0 +1,43 @@
+# robots.txt — Thuvaragan Gobalakrishnan Portfolio
+# https://YOUR-DOMAIN.com/robots.txt
+#
+# BEFORE DEPLOYING: replace YOUR-DOMAIN.com with your actual domain
+# in the Sitemap directive at the bottom of this file.
+
+# ── Allow all standard search engine crawlers ──────────────────
+User-agent: *
+Allow: /
+
+# Asset folders don't need to be indexed
+Disallow: /fonts/
+Disallow: /images/
+
+# ── AI training crawlers (opt-out) ─────────────────────────────
+# Remove any of these blocks if you wish to be included.
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+# ── Sitemap ─────────────────────────────────────────────────────
+Sitemap: https://YOUR-DOMAIN.com/sitemap.xml
