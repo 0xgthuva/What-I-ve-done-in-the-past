@@ -57,7 +57,8 @@
 
 ═══════════════════════════════════════════════════════════════ -->
 
-<link rel="icon" href="images/af3d2098a9c8ee0ca9ad77decd08b8a2.jpg">
+<link rel="icon" type="image/jpeg" href="https://assets.dinq.me/uploads/images/avatars/c0877f0c-979e-4205-bc63-45f4ec319070/af3d2098a9c8ee0ca9ad77decd08b8a2.jpg">
+<link rel="apple-touch-icon" href="https://assets.dinq.me/uploads/images/avatars/c0877f0c-979e-4205-bc63-45f4ec319070/af3d2098a9c8ee0ca9ad77decd08b8a2.jpg">
 
 <style>
 /* ═══════════════════════════════════════════════════
@@ -226,6 +227,23 @@ a{color:inherit;text-decoration:none}
   width:100%;
 }
 
+/* Square cards — 2×2 grid (Previous Works + Network/LinkedIn) */
+.card-sq{
+  aspect-ratio:1;
+  max-height:420px;
+  display:flex;
+  flex-direction:column;
+}
+.card-sq .card-pad{flex-shrink:0}
+/* Image anchored to bottom of a square card */
+.card-img-btm{
+  flex:1;
+  min-height:0;
+  width:100%;
+  object-fit:cover;
+  display:block;
+}
+
 .card-pad{padding:var(--pad)}
 
 /* ═══════════════════════════════════════════════════
@@ -277,7 +295,7 @@ a{color:inherit;text-decoration:none}
 .linkedin-card-inner{
   padding:var(--pad);
   display:flex;flex-direction:column;
-  height:360px;
+  height:100%;
 }
 .linkedin-header{display:flex;align-items:center;gap:10px;margin-bottom:14px}
 .linkedin-logo{
@@ -292,7 +310,7 @@ a{color:inherit;text-decoration:none}
    ═══════════════════════════════════════════════════ */
 .network-inner{
   padding:16px;
-  height:360px;
+  height:100%;
   position:relative;overflow:hidden;
 }
 .network-title{font-size:15px;font-weight:600;color:var(--color-text);margin-bottom:6px}
@@ -510,8 +528,6 @@ a{color:inherit;text-decoration:none}
 
   .card-grid{max-width:100%}
 
-  .linkedin-card-inner,
-  .network-inner,
   .career-inner,
   .twitter-inner{height:320px}
 
@@ -531,8 +547,6 @@ a{color:inherit;text-decoration:none}
   .hobby-card{flex-direction:column}
   .hobby-img{width:100%;height:200px;min-height:unset}
 
-  .linkedin-card-inner,
-  .network-inner,
   .career-inner,
   .twitter-inner{height:280px}
 
@@ -561,8 +575,6 @@ a{color:inherit;text-decoration:none}
 
   .note-text{font-size:14px}
 
-  .linkedin-card-inner,
-  .network-inner,
   .career-inner,
   .twitter-inner{height:260px}
 
@@ -649,11 +661,7 @@ a{color:inherit;text-decoration:none}
       <div class="card-row">
 
         <!-- CARD 1 – Performance Marketing -->
-        <article class="card">
-          <img class="card-img"
-            src="https://assets.dinq.me/uploads/images/c0877f0c-979e-4205-bc63-45f4ec319070/1772541057_UpWDPgxcHiR1e.webp"
-            alt="Performance Marketing cover"
-            loading="lazy">
+        <article class="card card-sq">
           <div class="card-pad">
             <div class="label-pill" aria-label="Previous Works">
               <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
@@ -666,14 +674,14 @@ a{color:inherit;text-decoration:none}
               Right click open the link &#128072;&#127996;
             </a>
           </div>
+          <img class="card-img-btm"
+            src="https://assets.dinq.me/uploads/images/c0877f0c-979e-4205-bc63-45f4ec319070/1772541057_UpWDPgxcHiR1e.webp"
+            alt="Performance Marketing cover"
+            loading="lazy">
         </article>
 
         <!-- CARD 2 – SEO + Growth Marketing -->
-        <article class="card">
-          <img class="card-img"
-            src="https://assets.dinq.me/uploads/images/c0877f0c-979e-4205-bc63-45f4ec319070/1772541763_3ohryhNgUwwZyxgktq.webp"
-            alt="SEO and Growth Marketing cover"
-            loading="lazy">
+        <article class="card card-sq">
           <div class="card-pad">
             <div class="label-pill">
               <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
@@ -689,6 +697,10 @@ a{color:inherit;text-decoration:none}
               Right click open the link &#128072;&#127996;
             </a>
           </div>
+          <img class="card-img-btm"
+            src="https://assets.dinq.me/uploads/images/c0877f0c-979e-4205-bc63-45f4ec319070/1772541763_3ohryhNgUwwZyxgktq.webp"
+            alt="SEO and Growth Marketing cover"
+            loading="lazy">
         </article>
       </div>
 
@@ -696,7 +708,7 @@ a{color:inherit;text-decoration:none}
       <div class="card-row">
 
         <!-- CARD 3 – Network -->
-        <article class="card">
+        <article class="card card-sq">
           <div class="network-inner">
             <div class="bg-grid-net" aria-hidden="true"></div>
             <div class="network-content">
@@ -781,7 +793,7 @@ a{color:inherit;text-decoration:none}
         </article>
 
         <!-- CARD 4 – LinkedIn Career Chart -->
-        <article class="card">
+        <article class="card card-sq">
           <div class="linkedin-card-inner">
             <div class="linkedin-header">
               <div class="linkedin-logo" aria-hidden="true">
